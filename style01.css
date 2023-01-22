@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h1 {
+    text-align: center;
+    font-size: 1.75em;
+}
+section {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    padding: 2.4rem 1rem 1rem;
+    margin: 10px;
+    color: #ffffff;
+    width: 400px;
+    border: 1px solid black;
+}
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: tan;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+
+/* =========== Desktop ========== */
+@media (min-width:992px) {
+    section {
+        display: inline-block;
+    }
+}
+/* =========== Desktop ========== */
+@media (min-width:768px) and (max-width:991px) {
+    section:nth-of-type(1), section:nth-of-type(2) {
+        display: inline-block;
+        width: 45%;
+        margin: 10px;
+    }
+    section:nth-of-type(3) {
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+}
+/* =========== Mobile ========== */
+@media (max-width:767px) {
+    section {
+        display: block;
+        width: 100%;
+    }
+}
